@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>8A</title>
 </head>
 <body>
-    <h1>HELLO WORLD!!!!</h1>
+    <script>
+        var menu = prompt("1. NASI GORENG HARGA 12.000 \n 2. BUBUR AYAM HARGA 8.000 \n 3. MIE GORENG HARGA 5.000 \n 4. KWETIAUW GORENG HARGA 15.000  \n 5. KARI AYAM HARGA 17.000 \n MASUKAN MENU  YANG INGIN ANDA PESAN : ");
+        var harga = parseInt(prompt("MASUKAN JUMLAH YANG INGIN DIPESAN"));
+        var total;
+            switch (menu) {
+                case 'NASI GORENG':
+                    total = 12000;
+                    break;
+                case 'BUBUR AYAM':
+                    total = 8000;
+                    break;
+                case 'MIE GORENG':
+                    total = 5000;
+                    break;
+                case 'KWETIAUW GORENG':
+                    total = 15000;
+                    break;
+                case 'KARI AYAM':
+                    total = 17000;
+                    break;
+                default:
+                    alert ("PESANAN YANG ANDA INGINKAN TIDAK ADA");
+                    break;
+            }
+            if (total !== undefined) {
+                var total2 = total * harga;
+            }
+            alert ("ANDA MEMESAN " +menu+ " DENGAN JUMLAH " +harga+ " TOTAL HARGA : " +total2+ "\n TERIMA KASIH TELAH MEMESAN ");
+    </script>
 </body>
 </html>
