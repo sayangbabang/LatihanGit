@@ -1,0 +1,60 @@
+/*ini contoh penggunaan external css*/
+body {
+    background-color: gray;
+}
+.container {
+    background-color: yellow;
+}
+.container p {
+    color: red;
+}
+#highlight {
+    color:lime;
+    font-size: 30px;
+}
+a:hover {
+    color:rgb(255, 0, 255);
+}
+.box-model {
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border: 3px black solid;
+    margin: 15px;
+}
+.box-model p {
+    font-size: 25px;
+}
+.flex-container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px black solid;
+    padding: 10px;
+}
+h2 {
+    font-size: 30px;
+}
+#bg {
+    font-size: 100px;
+    background-image:url(giphy.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.advance-style {
+    border-radius: 10px;
+    box-shadow: 5px 15px #4711c5;
+}
+@media (max-width: 600px) {
+    .flex {
+    flex-direction: column;
+    }
+    /* Aturan untuk mengubah ukuran font heading <h2> menjadi 24px */
+    h2 {
+    font-size: 24px;
+    }
+    /* Aturan untuk mengubah warna latar belakang halaman menjadi biru muda */
+    body {
+    background-color: #e0f7fa;
+    }
+  }
