@@ -1,0 +1,272 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigasi */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Search Bar */
+nav .search-bar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav .search-bar input[type="text"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    width: 200px;
+    transition: width 0.4s ease;
+}
+
+nav .search-bar input[type="text"]:focus {
+    width: 300px;
+}
+
+nav .search-bar button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav .search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Section Utama */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav .search-bar {
+        margin: 10px 0 0 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav .search-bar input[type="text"] {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    nav .search-bar button {
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+.search-container input {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    outline: none;
+    transition: width 0.4s ease-in-out;
+}
+
+.search-container input:focus {
+    width: 250px;
+}
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.contact-form-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Judul Form */
+.contact-form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Gaya untuk Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Tombol Submit */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.main-content, .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Gaya untuk perangkat dengan lebar layar maksimal 768px (tablet dan ponsel) */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Menu navigasi menjadi kolom */
+    }
+    
+    .main-content {
+        padding: 10px; /* Sesuaikan padding agar pas di layar lebih kecil */
+    }
+
+    .contact-form {
+        width: 100%; /* Form kontak memenuhi lebar layar */
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+}
+
+/* Gaya untuk perangkat dengan lebar layar maksimal 480px (ponsel) */
+@media only screen and (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header {
+        text-align: center;
+    }
+}
