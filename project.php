@@ -12,7 +12,6 @@
     $password = "";
     $dbname = "my data base2";
     
-
     // Membuat koneksi
     $conn = new mysqli($servername, $username, $password, $dbname);
 
