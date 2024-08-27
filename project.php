@@ -11,6 +11,7 @@
     $username = "root";
     $password = "";
     $dbname = "my data base2";
+    
 
     // Membuat koneksi
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -19,10 +20,31 @@
     if ($conn->connect_error) {
         die("Koneksi gagal: " . $conn->connect_error);
     }
-    echo "Koneksi berhasil";
 
-    // Menutup koneksi
-    $conn->close();
+    // Jalankan query
+    $sql = "SELECT id, nama, email FROM users";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // Membuat tabel HTML dengan border
+        echo "<table border='1' cellpadding='10' cellspacing='0'>";
+        echo "<tr><th>ID</th><th>Nama</th><th>Email</th></tr>";
+        
+        // Menampilkan data dalam baris tabel
+        while($row = $result->fetch_assoc()) {
+            echo "<tr>
+                    <td>" . $row["id"]. "</td>
+                    <td>" . $row["nama"]. "</td>
+                    <td>" . $row["email"]. "</td>
+                </tr>";
+        }
+        echo "</table>";
+    } else {
+        echo "0 results";
+    }
+
+    // Tutup koneksi
+    $conn->close()
     ?>
 </body>
 </html>
