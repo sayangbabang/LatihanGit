@@ -1,0 +1,21 @@
+.portfolio {
+    padding: 50px;
+    text-align: center;
+}
+
+.portfolio h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.portfolio-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
