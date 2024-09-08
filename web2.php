@@ -18,9 +18,9 @@
             <ul>
                 <li><a href="#">Beranda</a></li>
                 <li><a href="https://maggieandrose.com/">Game</a></li>
-                <li><a href="#">Developer</a></li>
-                <li><a href="https://www.instagram.com/ygyaa_l/">Contact</a></li>
-                <li><a href="#">Sign In</a></li>
+                <li><a href="https://www.instagram.com/ygyaa_l/">Developer</a></li>
+                <li><a href="cons.php">Contact</a></li>
+                <li><a href="sigim.php">Sign In</a></li>
                 <li><a href="#">Sign Up</a></li>
             </ul>
         </nav>
